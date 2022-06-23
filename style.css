@@ -1,0 +1,34 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.custom-payment {
+    font-size: 1.7em;
+}
+
+.custom-day {
+    font-size: 52px;
+}
+
+.f-right {
+    margin-left: 100px;
+}
+
+.clock-text {
+    font-size: 2.5em;
+}
+
+.custom-input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+.bi-bag-check{
+font-size: 3.5em;
+}

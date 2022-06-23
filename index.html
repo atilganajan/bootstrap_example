@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ödeme Sistemi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Open Sans Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--Container-->
+  <div class="container mt-5 ">
+    <div class="row">
+
+      <!--Randevu Özeti-->
+      <div class="col-12 col-lg-6 mb-5 pe-4">
+        <h4 class="fw-bold text-danger border-bottom border-danger pb-2 mb-4">
+          RANDEVU ÖZETİ
+        </h4>
+
+        <!--Card-->
+        <div class="card d-flex bg-black text-white row">
+          <div class="d-flex justify-content-between py-2 px-4">
+
+            <div class="d-flex align-items-center px-0">
+              <div class="custom-day ">22</div>
+              <div class="ms-2">
+                <div><b>AĞUSTOS 2022</b></div>
+                <div>Cuma</div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center px-0 clock-text">
+              <div> <i class="bi bi-clock"></i></div>
+              <div class="ps-3">13.45</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!--Hizmetler ve toplam ücret-->
+        <div class="row mt-2">
+          <div class="col-7 row">
+            <div class="col-6">
+              <div class="mt-2">Salon</div>
+              <div class="mt-2">Hizmet</div>
+              <div class="mt-2">Estetisyen</div>
+            </div>
+            <div class="col-6 ">
+              <div class="mt-2"><b>Cadde Meram</b></div>
+              <div class="mt-2"><b>Kalıcı Epilasyon</b></div>
+              <div class="mt-2"><b>Bahar Özdoğan</b></div>
+            </div>
+
+            <div class="mt-3 d-flex">
+              <div><i class="fa-3x bi-bag-check  me-3 text-danger"></i></div>
+              <div class="col-8 mt-2">
+                <div>RANDEVU TOPLAMI</div>
+                <div class="text-danger fw-bold custom-payment">₺250</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Ödeme Sistemi-->
+      <div class="col-12 col-lg-6">
+        <h4 class="fw-bold border-bottom border-dark pb-2 mb-4">
+          ÖDEME
+        </h4>
+        <div><b>LÜTFEN ÖDEME YÖNTEMİNİ SEÇİNİZ</b></div>
+
+        <!--Form Radioları-->
+        <form>
+          <div class="form-check form-check-inline mt-2">
+            <input class="form-check-input" type="radio" id="inlineRadio1" value="option1" name="selectPay">
+            <label class="form-check-label" for="inlineRadio1">Online Ödeme</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineRadio2" value="option2" name="selectPay">
+            <label class="form-check-label" for="inlineRadio2">Salonda Öde</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="inlineRadio3" value="option3" name="selectPay">
+            <label class="form-check-label" for="inlineRadio3">Güzellik Kredisi</label>
+          </div>
+
+          <!--Form Inputları-->
+          <div class="mb-3 mt-3">
+            <label for="cardNameInput" class="form-label fw-semibold">KART ÜZERİNDEKİ İSİM</label>
+            <input type="text" class="form-control  bg-secondary text-white custom-input p-2 px-3" id="cardNameInput"
+              aria-describedby="emailHelp" placeholder="DENİZ KAHVECİ">
+
+          </div>
+          <div class="mb-3">
+            <label for="tcNumberInput" class="form-label fw-semibold">TC KİMLİK NUMARANIZ </label>
+            <input type="text" class="form-control bg-secondary text-white custom-input p-2 px-3" id="tcNumberInput"
+              placeholder="4444 4444 4444 4444">
+          </div>
+
+          <!--Form Selectleri-->
+          <div class="row">
+            <div class="col-8 fw-semibold">SON KULLANMA TARİHİ</div>
+            <div class="col-4 mb-2 fw-semibold">CVC</div>
+            <div class="col-4 ">
+              <select class="form-select bg-secondary text-white p-2 px-3" aria-label=".form-select-sm ">
+                <option selected value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+              </select>
+            </div>
+            <div class="col-4 ">
+              <select class="form-select bg-secondary text-white p-2 px-3" aria-label=".form-select-sm ">
+                <option selected value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+              </select>
+
+            </div>
+            <div class="col-4 ">
+              <input type="text" class="form-control bg-secondary custom-input text-white p-2 px-3" id="cvcInput"
+                placeholder="234">
+            </div>
+
+          </div>
+
+          <div class="my-3 form-check">
+            <input type="checkbox" class="form-check-input" id="securyPay">
+            <label class="form-check-label" for="securyPay">3D Secury ile öde </label>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-danger" type="button">ONAYLA ve OLUŞTUR </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--CDN Link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
